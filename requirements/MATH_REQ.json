@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {"id": "math_core", "type": "all", "courses": [
+      "MATH 124", "MATH 125", "MATH 126", "MATH 207", "MATH 208",
+      "MATH 200", "MATH 224", "MATH 300", "MATH 327", "MATH 424"
+    ]},
+    {"id": "math_sequences", "type": "one_of", "options": [
+      {"id": "math_seq_3q", "type": "k_of_n", "k": 2, "courses": [
+        ["MATH 402", "MATH 403", "MATH 404"],
+        ["MATH 441", "MATH 442", "MATH 443"],
+        ["MATH 407", "MATH 408", "MATH 409"]
+      ]},
+      {"id": "math_seq_2q", "type": "k_of_n", "k": 3, "courses": [
+        ["MATH 425", "MATH 426"],
+        ["MATH 427", "MATH 428"],
+        ["MATH 461", "MATH 462"],
+        ["MATH 464", "MATH 465"],
+        ["MATH 491", "MATH 492"],
+        ["MATH 491", "MATH 493"]
+      ]}
+    ]},
+    {"id": "math_advanced_credits", "type": "credits", "min_credits": 44,
+      "depts": ["MATH"], "min_number": 300,
+      "exclude": ["MATH 382", "MATH 397", "MATH 398", "MATH 399", "MATH 411", "MATH 412", "MATH 444", "MATH 445", "MATH 496", "MATH 497", "MATH 498", "MATH 499"],
+      "also": ["AMATH 383", "AMATH 402", "AMATH 403", "CSE 373", "CSE 332", "CSE 374", "CSE 333", "CSE 417", "CSE 421", "ECON 400", "ECON 424", "ECON 484", "E E 416", "E E 418", "PHYS 321", "PHYS 322", "PHYS 324", "PHIL 470", "PHIL 471", "PHIL 472"]
+    },
+    {"id": "math_external_electives", "type": "at_most", "k": 2, "courses": [
+      "AMATH 383", "AMATH 402", "AMATH 403", "CSE 373", "CSE 332", "CSE 374", "CSE 333", "CSE 417", "CSE 421",
+      "ECON 400", "ECON 424", "ECON 484", "E E 416", "E E 418", "PHYS 321", "PHYS 322", "PHYS 324",
+      "PHIL 470", "PHIL 471", "PHIL 472"
+    ]}
+  ]
+}

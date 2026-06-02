@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {"id": "cs_programming", "type": "k_of_n", "k": 1, "courses": [["CSE 123"], ["CSE 143"]]},
+    {"id": "cs_fundamentals", "type": "all", "courses": ["CSE 311", "CSE 312", "CSE 331", "CSE 332", "CSE 351"]},
+    {"id": "cs_four_400", "type": "k_of_n", "k": 4, "courses": [
+      ["CSE 401"], ["CSE 403"], ["CSE 414"], ["CSE 421"], ["CSE 427"], ["CSE 431"],
+      ["CSE 440"], ["CSE 442"], ["CSE 446"], ["CSE 447"], ["CSE 451"], ["CSE 452"],
+      ["CSE 461"], ["CSE 473"], ["CSE 484"]
+    ]},
+    {"id": "cs_two_core", "type": "k_of_n", "k": 2, "exclude_from": ["cs_fundamentals"], "courses": [
+      ["CSE 313"], ["CSE 319"], ["CSE 333"], ["CSE 340"], ["CSE 341"], ["CSE 369"], ["CSE 374"],
+      ["CSE 401"], ["CSE 403"], ["CSE 414"], ["CSE 421"], ["CSE 427"], ["CSE 431"],
+      ["CSE 440"], ["CSE 442"], ["CSE 446"], ["CSE 447"], ["CSE 451"], ["CSE 452"],
+      ["CSE 461"], ["CSE 473"], ["CSE 484"]
+    ]},
+    {"id": "cs_core_or_capstone", "type": "k_of_n", "k": 1, "exclude_from": ["cs_fundamentals"], "courses": [
+      ["CSE 313"], ["CSE 319"], ["CSE 333"], ["CSE 340"], ["CSE 341"], ["CSE 369"], ["CSE 374"],
+      ["CSE 401"], ["CSE 403"], ["CSE 414"], ["CSE 421"], ["CSE 427"], ["CSE 431"],
+      ["CSE 440"], ["CSE 442"], ["CSE 446"], ["CSE 447"], ["CSE 451"], ["CSE 452"],
+      ["CSE 461"], ["CSE 473"], ["CSE 484"],
+      ["CSE 481"], ["CSE 482"], ["CSE 487"], ["CSE 488"], ["CSE 493"]
+    ]},
+    {"id": "cs_elective_credits", "type": "credits", "min_credits": 33, "exclude_from": ["cs_fundamentals"], "courses": [
+      "CSE 313", "CSE 319", "CSE 333", "CSE 340", "CSE 341", "CSE 369", "CSE 374",
+      "CSE 401", "CSE 403", "CSE 414", "CSE 421", "CSE 427", "CSE 431",
+      "CSE 440", "CSE 442", "CSE 446", "CSE 447", "CSE 451", "CSE 452",
+      "CSE 461", "CSE 473", "CSE 484",
+      "CSE 481", "CSE 482", "CSE 487", "CSE 488", "CSE 493"
+    ]},
+    {"id": "cs_math", "type": "all", "courses": ["MATH 124", "MATH 125", "MATH 126", "MATH 208"]},
+    {"id": "cs_natural_science", "type": "credits", "min_credits": 5, "tag": "NSc"}
+  ]
+}

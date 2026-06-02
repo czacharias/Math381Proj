@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {"id": "english_composition", "type": "k_of_n", "k": 1, "tag": "C", "max_number": 199},
+    {"id": "foreign_language", "type": "credits", "min_credits": 15, "max_number": 299,
+      "depts": ["FRENCH", "SPAN", "ITAL", "GERMAN", "JAPAN", "CHIN", "KOREAN", "LATIN", "GREEK", "RUSS", "ARAB", "HINDI", "VIET", "PORT", "SWED", "NORW", "FINN", "DANISH", "CZECH", "POLSH", "ROMN", "TAGLG", "THAI", "INDO", "KHMER", "UKR", "BULGR", "GEORG", "ESTO", "SCAND", "SLAVIC"]
+    },
+    {"id": "diversity", "type": "credits", "min_credits": 5, "tag": "DIV"},
+    {"id": "reasoning", "type": "credits", "min_credits": 5, "tag": "RSN"},
+    {"id": "writing", "type": "credits", "min_credits": 10, "tag": "C", "min_number": 200},
+    {"id": "arts_humanities", "type": "credits", "min_credits": 20, "tag": "A&H"},
+    {"id": "social_sciences", "type": "credits", "min_credits": 20, "tag": "SSc"},
+    {"id": "natural_sciences", "type": "credits", "min_credits": 20, "tag": "NSc"},
+    {"id": "total_credits", "type": "credits", "min_credits": 180, "any": true},
+    {"id": "upper_division_credits", "type": "credits", "min_credits": 60, "any": true, "min_number": 300}
+  ]
+}
